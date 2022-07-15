@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
-
+import Image from 'next/image';
 import Link from 'next/link';
 import { getCategories } from '../services';
-import Image from 'next/image'
-import duck from '../public/IMG_5670.PNG'
+import duck from '../public/IMG_5670.PNG';
 
 const Header = () => {
   const [categories, setCategories] = useState([]);
@@ -16,14 +15,12 @@ const Header = () => {
 
   return (
     <div className="container mx-auto px-0 mb-8 bg-black-50 w-screen space-x-4 flex">
-       {/* Border below title*/}
       <div className='duck'>
         <Image src={duck}/>
       </div>
       <div className="border-bg-white w-full inline-block border-bg-white py-8">
         <div className="md:float-left block">
           <Link href="/">
-            {/* MAIN TITLE OF BLOG SITE*/}
             <span className="cursor-pointer font-bold text-5xl text-white"> TAMS | CSO BLOG</span>
           </Link>
         </div>
