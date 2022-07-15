@@ -15,8 +15,8 @@ const Header = () => {
 
   return (
     <div className="container mx-auto px-0 mb-8 bg-black-50 w-screen space-x-4 flex">
-      <div className='duck'>
-        <Image src={duck}/>
+      <div className="duck">
+        <Image src={duck} />
       </div>
       <div className="border-bg-white w-full inline-block border-bg-white py-8">
         <div className="md:float-left block">
